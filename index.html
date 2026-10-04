@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amit Chavhan — CSE (IoT) student, aspiring Software Engineer and future DevOps Engineer." />
+  <meta name="theme-color" content="#07100d" />
+  <title>Amit Chavhan | Arcane Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursorAura" aria-hidden="true">
+    <span class="aura-ring aura-ring-a"></span>
+    <span class="aura-ring aura-ring-b"></span>
+    <span class="aura-core"></span>
+  </div>
+  <canvas id="magicCanvas" aria-hidden="true"></canvas>
+
+  <div class="video-layer" aria-hidden="true">
+    <video id="backgroundVideo" autoplay muted loop playsinline preload="auto"
+      poster="assets/video/reference-poster.png">
+      <!-- Replace ONLY this filename with your video; keep it inside assets/video/ -->
+      <source src="assets/video/portfolio-background.mp4" type="video/mp4" />
+      <source src="assets/video/portfolio-background.webm" type="video/webm" />
+    </video>
+    <div class="video-tint"></div>
+    <div class="video-vignette"></div>
+    <div class="mist-layer mist-one"></div>
+    <div class="mist-layer mist-two"></div>
+  </div>
+
+  <div class="floating-seal seal-left" aria-hidden="true">✦</div>
+  <div class="floating-seal seal-right" aria-hidden="true">◇</div>
+
+  <header class="nav-shell">
+    <a class="brand" href="#home">
+      <span class="brand-medallion">AC</span>
+      <span>
+        <strong>AMIT CHAVHAN</strong>
+        <small>CSE · IoT</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#journey">Journey</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#certificates">Certificates</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="scene-label" aria-hidden="true">
+    <span class="scene-dot"></span>
+    <span>PORTFOLIO // ACTIVE</span>
+    <span class="scene-line"></span>
+    <span id="sceneDepth">DEPTH 00</span>
+  </div>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-content depth-layer" data-depth="0.9">
+        <div class="eyebrow reveal">
+          <span class="eyebrow-mark">✧</span>
+          CSE (IoT) STUDENT · MUMBAI
+        </div>
+
+        <div class="hero-title-wrap reveal reveal-delay-1">
+          <p class="hero-kicker">ENTER THE WORKSHOP</p>
+          <h1><span>Amit</span> Chavhan</h1>
+          <div class="title-underline"><span></span></div>
+        </div>
+
+        <p class="hero-role reveal reveal-delay-2">
+          ASPIRING SOFTWARE ENGINEER
+          <i>◆</i>
+          FUTURE DEVOPS ENGINEER
+        </p>
+
+        <p class="hero-copy reveal reveal-delay-3">
+          I build software, connected systems and practical experiments with a
+          problem-solving mindset — always learning, always refining the craft.
+        </p>
+
+        <div class="hero-actions reveal reveal-delay-4">
+          <a class="btn btn-gold" href="#projects">Enter My Work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Send a Message</a>
+        </div>
+
+        <div class="hero-facts reveal reveal-delay-5">
+          <span>THAKUR COLLEGE OF ENGINEERING</span>
+          <b>·</b>
+          <span>KANDIVLI, MUMBAI</span>
+        </div>
+      </div>
+
+      <div class="hero-orbital depth-layer" data-depth="-1.2" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="orb-core">
+          <div class="core-inner">AC</div>
+        </div>
+        <div class="floating-rune rune-a">ᚫ</div>
+        <div class="floating-rune rune-b">✦</div>
+        <div class="floating-rune rune-c">◇</div>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span>SCROLL TO EXPLORE</span>
+        <strong>↓</strong>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header reveal">
+        <span class="chapter">01 / THE CRAFT</span>
+        <h2>A little about the <em>person behind the code.</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card parchment-card reveal depth-card">
+          <div class="card-ribbon">PROFILE</div>
+          <p>
+            I'm a Computer Science and Engineering (IoT) student at
+            <strong>Thakur College of Engineering, Kandivli, Mumbai</strong>.
+            I'm passionate about IoT, software development, embedded systems,
+            cloud technologies and modern web experiences.
+          </p>
+          <p>
+            My current path is simple: become a strong <strong>Software Engineer</strong>,
+            then move deeper into <strong>DevOps</strong> with cloud infrastructure,
+            automation, CI/CD and reliable production systems.
+          </p>
+          <blockquote>
+            “Keep learning. Keep building. Turn difficult problems into useful systems.”
+          </blockquote>
+        </article>
+
+        <div class="about-stacks">
+          <article class="glass-card mini-card reveal reveal-delay-1">
+            <span class="mini-number">I</span>
+            <h3>Problem Solver</h3>
+            <p>Break complex problems into practical steps and ship useful solutions.</p>
+          </article>
+          <article class="glass-card mini-card reveal reveal-delay-2">
+            <span class="mini-number">II</span>
+            <h3>Quick Learner</h3>
+            <p>Explore unfamiliar tools and turn new concepts into working projects.</p>
+          </article>
+          <article class="glass-card mini-card reveal reveal-delay-3">
+            <span class="mini-number">III</span>
+            <h3>IoT Mindset</h3>
+            <p>Enjoy the meeting point of sensors, software, networks and smart systems.</p>
+          </article>
+          <article class="glass-card mini-card reveal reveal-delay-4">
+            <span class="mini-number">IV</span>
+            <h3>Future Focus</h3>
+            <p>Software Engineering first — DevOps, cloud and automation next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header reveal">
+        <span class="chapter">02 / THE ARSENAL</span>
+        <h2>The tools I use to <em>build the magic.</em></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="glass-card skill-card reveal">
+          <div class="skill-sigil">{ }</div>
+          <div><span class="skill-tag">01</span><h3>Programming</h3></div>
+          <p>C · C++ · Python · JavaScript · Java</p>
+        </article>
+        <article class="glass-card skill-card reveal reveal-delay-1">
+          <div class="skill-sigil">⌘</div>
+          <div><span class="skill-tag">02</span><h3>Web Development</h3></div>
+          <p>HTML5 · CSS3 · React · Next.js</p>
+        </article>
+        <article class="glass-card skill-card reveal reveal-delay-2">
+          <div class="skill-sigil">API</div>
+          <div><span class="skill-tag">03</span><h3>Backend</h3></div>
+          <p>FastAPI · Node.js · Express.js · REST APIs</p>
+        </article>
+        <article class="glass-card skill-card reveal reveal-delay-3">
+          <div class="skill-sigil">OPS</div>
+          <div><span class="skill-tag">04</span><h3>DevOps & Cloud</h3></div>
+          <p>Linux · Docker · Kubernetes · AWS (Learning)</p>
+        </article>
+        <article class="glass-card skill-card reveal reveal-delay-4">
+          <div class="skill-sigil">IoT</div>
+          <div><span class="skill-tag">05</span><h3>Connected Systems</h3></div>
+          <p>Arduino · ESP32 · MQTT · Sensors</p>
+        </article>
+        <article class="glass-card skill-card reveal reveal-delay-5">
+          <div class="skill-sigil">GIT</div>
+          <div><span class="skill-tag">06</span><h3>Tools</h3></div>
+          <p>Git · GitHub · VS Code · Postman</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-header reveal">
+        <span class="chapter">03 / THE JOURNEY</span>
+        <h2>A path from <em>connected devices to cloud.</em></h2>
+      </div>
+
+      <div class="timeline-wrap glass-card reveal">
+        <div class="timeline-line"></div>
+        <div class="timeline-step current">
+          <div class="timeline-node">01</div>
+          <div><small>NOW</small><h3>CSE (IoT) Student</h3><p>Thakur College of Engineering, Kandivli, Mumbai</p></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-node">02</div>
+          <div><small>NEXT</small><h3>Software Engineer</h3><p>Strengthen development fundamentals, backend systems and production-quality software.</p></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-node">03</div>
+          <div><small>FUTURE</small><h3>DevOps Engineer</h3><p>Go deeper into cloud infrastructure, containers, CI/CD, automation and reliability.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header reveal">
+        <span class="chapter">04 / PROJECTS</span>
+        <h2>Work from the <em>workshop.</em></h2>
+        <p class="section-sub">Drop your real project screenshots into <code>assets/projects/</code> and replace the placeholder filenames below.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal depth-card">
+          <div class="project-visual">
+            <span class="visual-label">PROJECT 01</span>
+            <div class="project-placeholder">
+              <span>IMAGE</span><small>projects/project-1.jpg</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">FEATURED BUILD</span>
+            <h3>Project Name 01</h3>
+            <p>Explain the problem, the system you built and the result it produced.</p>
+            <div class="tech-pills"><span>Python</span><span>FastAPI</span><span>React</span></div>
+            <a href="#" class="text-link">Open Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal reveal-delay-1 depth-card">
+          <div class="project-visual">
+            <span class="visual-label">PROJECT 02</span>
+            <div class="project-placeholder">
+              <span>IMAGE</span><small>projects/project-2.jpg</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">IoT / EMBEDDED</span>
+            <h3>Project Name 02</h3>
+            <p>Show an IoT, sensor, embedded or smart-device project and its real-world value.</p>
+            <div class="tech-pills"><span>ESP32</span><span>MQTT</span><span>Sensors</span></div>
+            <a href="#" class="text-link">Open Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal reveal-delay-2 depth-card">
+          <div class="project-visual">
+            <span class="visual-label">PROJECT 03</span>
+            <div class="project-placeholder">
+              <span>IMAGE</span><small>projects/project-3.jpg</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">WEB / SOFTWARE</span>
+            <h3>Project Name 03</h3>
+            <p>Present your strongest web or software build with a clear outcome and technical stack.</p>
+            <div class="tech-pills"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <a href="#" class="text-link">Open Case Study ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="section-header reveal">
+        <span class="chapter">05 / CERTIFICATES</span>
+        <h2>Milestones from the <em>journey.</em></h2>
+        <p class="section-sub">Add certificate images to <code>assets/certificates/</code> and update the card text.</p>
+      </div>
+
+      <div class="cert-grid">
+        <article class="glass-card cert-card reveal"><div class="cert-frame"><span>CERTIFICATE</span><small>certificates/certificate-1.jpg</small></div><h3>Certificate Name 01</h3><p>Issuing Organization · 2026</p><a href="#">Verify ↗</a></article>
+        <article class="glass-card cert-card reveal reveal-delay-1"><div class="cert-frame"><span>CERTIFICATE</span><small>certificates/certificate-2.jpg</small></div><h3>Certificate Name 02</h3><p>Issuing Organization · 2026</p><a href="#">Verify ↗</a></article>
+        <article class="glass-card cert-card reveal reveal-delay-2"><div class="cert-frame"><span>CERTIFICATE</span><small>certificates/certificate-3.jpg</small></div><h3>Certificate Name 03</h3><p>Issuing Organization · 2026</p><a href="#">Verify ↗</a></article>
+        <article class="glass-card cert-card reveal reveal-delay-3"><div class="cert-frame"><span>CERTIFICATE</span><small>certificates/certificate-4.jpg</small></div><h3>Certificate Name 04</h3><p>Issuing Organization · 2026</p><a href="#">Verify ↗</a></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card glass-card reveal">
+        <div class="contact-copy">
+          <span class="chapter">06 / CONTACT</span>
+          <h2>Let's build something <em>remarkable.</em></h2>
+          <p>Open to internships, collaborations, projects and conversations around software, IoT, cloud and DevOps.</p>
+        </div>
+        <div class="contact-panel">
+          <span class="contact-caption">MESSAGE ROUTE</span>
+          <a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <span>Mumbai, Maharashtra</span>
+          <div class="social-row"><a href="#">GitHub ↗</a><a href="#">LinkedIn ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>AMIT CHAVHAN · ARCANE PORTFOLIO</div>
+    <div class="footer-note">Replace the background video in <code>assets/video/</code>. Built as an original dark-academia wizarding interface.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
